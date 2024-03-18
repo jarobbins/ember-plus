@@ -41,8 +41,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmberLib.Glow.PowerPack", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmberLib", "EmberLib\EmberLib.csproj", "{535D5B87-6DB7-41EB-A4EC-37A56C6352FB}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EmberLib.Glow.Formula.Parser", "EmberLib.Glow.Formula.Parser\EmberLib.Glow.Formula.Parser.fsproj", "{DC6135B0-A7E3-4FEF-842D-BA43A723A135}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -209,18 +207,6 @@ Global
 		{535D5B87-6DB7-41EB-A4EC-37A56C6352FB}.Release|x64.Build.0 = Release|x64
 		{535D5B87-6DB7-41EB-A4EC-37A56C6352FB}.Release|x86.ActiveCfg = Release|x86
 		{535D5B87-6DB7-41EB-A4EC-37A56C6352FB}.Release|x86.Build.0 = Release|x86
-		{DC6135B0-A7E3-4FEF-842D-BA43A723A135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC6135B0-A7E3-4FEF-842D-BA43A723A135}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC6135B0-A7E3-4FEF-842D-BA43A723A135}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{DC6135B0-A7E3-4FEF-842D-BA43A723A135}.Debug|x64.Build.0 = Debug|Any CPU
-		{DC6135B0-A7E3-4FEF-842D-BA43A723A135}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{DC6135B0-A7E3-4FEF-842D-BA43A723A135}.Debug|x86.Build.0 = Debug|Any CPU
-		{DC6135B0-A7E3-4FEF-842D-BA43A723A135}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC6135B0-A7E3-4FEF-842D-BA43A723A135}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC6135B0-A7E3-4FEF-842D-BA43A723A135}.Release|x64.ActiveCfg = Release|Any CPU
-		{DC6135B0-A7E3-4FEF-842D-BA43A723A135}.Release|x64.Build.0 = Release|Any CPU
-		{DC6135B0-A7E3-4FEF-842D-BA43A723A135}.Release|x86.ActiveCfg = Release|Any CPU
-		{DC6135B0-A7E3-4FEF-842D-BA43A723A135}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -238,6 +224,8 @@ Global
 		{7F997B1C-CEC6-4CE8-8FD5-9D11B233B6EE} = {B6FD5E03-1D25-42B0-8126-65D919C82343}
 		{038C790D-A88D-431C-9E38-A3E9DA81B65C} = {613A82F1-8F21-40CE-B2FA-36A395AF66FB}
 		{535D5B87-6DB7-41EB-A4EC-37A56C6352FB} = {613A82F1-8F21-40CE-B2FA-36A395AF66FB}
-		{DC6135B0-A7E3-4FEF-842D-BA43A723A135} = {613A82F1-8F21-40CE-B2FA-36A395AF66FB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D7AA1B8-49AE-41D0-9357-E3D2D504C520}
 	EndGlobalSection
 EndGlobal
