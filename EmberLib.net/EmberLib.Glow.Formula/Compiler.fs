@@ -10,7 +10,7 @@ open System
 open System.Reflection
 open System.Collections.Generic
 open System.Text
-open Microsoft.FSharp.Text.Lexing
+open FSharp.Text.Lexing
 open EmberLib.Glow
 open Ast
 open Lexer

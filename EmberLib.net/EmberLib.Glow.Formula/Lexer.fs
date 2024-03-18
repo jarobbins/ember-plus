@@ -3,13 +3,12 @@
 module internal EmberLib.Glow.Formula.Lexer
 
 open System
-open Microsoft.FSharp.Text.Lexing
+open FSharp.Text.Lexing
 open Parser
 open System.Collections.Generic
 open System.Globalization
 open System.Text
-open Microsoft.FSharp.Text.Lexing
-open Microsoft.FSharp.Text.Parsing.ParseHelpers
+open FSharp.Text.Parsing.ParseHelpers
 
 let lexeme (lexbuf : LexBuffer<char>) = LexBuffer<_>.LexemeString lexbuf
 
@@ -115,10 +114,10 @@ let trans : uint16[] array =
      [| 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 65535us; 65535us; 65535us; 65535us; 30us; 65535us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 30us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; 65535us; |];
     |] 
 let actions : uint16[] = [|65535us; 0us; 1us; 65535us; 2us; 3us; 4us; 5us; 6us; 7us; 8us; 9us; 10us; 11us; 12us; 13us; 15us; 16us; 65535us; 65535us; 15us; 65535us; 14us; 14us; 14us; 65535us; 14us; 65535us; 14us; 14us; 13us; |]
-let _fslex_tables = Microsoft.FSharp.Text.Lexing.UnicodeTables.Create(trans,actions)
+let _fslex_tables = FSharp.Text.Lexing.UnicodeTables.Create(trans,actions)
 let rec _fslex_dummy () = _fslex_dummy() 
 (* Rule token *)
-and token  (lexbuf : Microsoft.FSharp.Text.Lexing.LexBuffer<_>) = _fslex_token  0 lexbuf
+and token  (lexbuf : FSharp.Text.Lexing.LexBuffer<_>) = _fslex_token  0 lexbuf
 (* Rule token *)
 and _fslex_token  _fslex_state lexbuf =
   match _fslex_tables.Interpret(_fslex_state,lexbuf) with
